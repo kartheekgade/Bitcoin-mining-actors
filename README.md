@@ -17,19 +17,20 @@ The master and worker nodes are first configured in the same network pool using 
   
   ***Assumptions***
 
-* All the nodes should be under the same network pool and should be aware of the unique cookie that is used for secure connection.
-* The hash generated should have "K" leading zeros for a successful match.
-* As the number of actors grow, so does the number of possible combinations, resulting in the increased hash generation and a higher chance of finding the Bitcoins.
-* The Masters runs for a given custom time limit of 60,000 ms
+* All nodes should belong to the same network pool and also be aware of the specific cookie that is utilized for secure connections.
+* For a successful match, the hash produced should have "K" leading zeros. 
+* The number of options increases along with the actors' number, increasing hash generation and the probability of locating the Bitcoins. 
+* The Masters has a preset custom time frame of 60,000 milliseconds.
 
 ***Size of the work unit***
 
-The workers receive a mining request with no upper limit on the number of coins to be mined in this problem. 
-For bitcoin mining we launched 2\*logproc worker process/node, where logproc is the number of logical processors available on teh computer. 
-We also supervise each worker's process and restart it if it fails to guarantee that all worker processes remain operational.
+The number of coins to be mined in this problem has no upper limits, and the employees receive a mining request. We launched 2*log proc worker processes/nodes for bitcoin mining, where logiproc is the total number of logical processors on the machine. To ensure that all worker processes continue to function, we also monitor each worker's process and restart it if necessary.
 
-The work unit is 3 in size. A single worker (i) Produces a random worker, (ii) Performs SHA-256 encoding, 
-(iii) Checks the encoded string for number of reading zeroes.
+The work unit is 3 in size. A single worker does,
+
+1. Produces a random worker
+2. Performs SHA-256 encoding 
+3. Checks the encoded string for number of reading zeroes.
 
 ***The result of running your program for input 4***
 
