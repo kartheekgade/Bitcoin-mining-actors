@@ -20,13 +20,8 @@ After this the worker nodes who already know the master node and master process 
 
 Once the connection is established, first the master process is started followed by the worker processes.
 
-***Master:***
   
-***Worker One( On remote node in a different machine):***
-
-***Worker Two( On different node in same machine):***
-  
-  Then the master sends the coins to the next available workers that are to be mined and also mines some coins by itself.
+ Then the master sends the coins to the next available workers that are to be mined and also mines some coins by itself.
   
   ***Assumptions***
 
