@@ -7,8 +7,7 @@
 
 %%---- Init_server starts the master node ------
 init_server(LeadingZeros) ->
-%%  {_,_} = statistics(runtime),
-%%  {_,_} = statistics(wall_clock),
+
   register(masterNode, spawn(main_master, handleWorkers, [LeadingZeros, 0])),
 
   timer:send_after(50000, whereis(masterNode), {completedMining, self()}),
@@ -28,14 +27,7 @@ init_server(LeadingZeros) ->
   timer:kill_after(50000, whereis(masterNode7)),
   {_,_} = statistics(runtime),
   {_,_} = statistics(wall_clock).
-%%  for(8,1,LeadingZeros).
 
-%%  for(0,_,_) ->
-%%   [];
-%% for(N,Term,LeadingZeros) when N > 0 ->
-%%   register(string:concat("masterNode", N) , spawn(main_master, bitcoinMapping(LeadingZeros,0), [LeadingZeros, 0])),
-%%   timer:kill_after(50000, whereis(string:concat("masterNode", N))),
-%%  [Term|for(N-1,Term,LeadingZeros)].
 
 %%-------------------------------------------
 
@@ -132,17 +124,7 @@ handleWorkers(ZeroCount, CoinsMined) ->
       io:format("Real time: ~p seconds\n", [Run_time]),
       io:format("Ratio is ~p \n", [T3]),
       erlang:exit(self(), normal)
-%%  after 25000 ->
-%%    {_,CPU_time} = statistics(runtime),
-%%    {_,Run_time} = statistics(wall_clock),
-%%    timer:sleep(5000),
-%%    T = CPU_time/ 1000,
-%%    T2 = Run_time / 1000,
-%%    T3 = T/ T2,
-%%    io:format("CPU time: ~p seconds\n", [T]),
-%%    io:format("Real time: ~p seconds\n", [T2]),
-%%    io:format("Ratio is ~p \n", [T3]),
-%%    erlang:exit(normal)
+
   end.
 
 %%------------------------------------------------------------------------------------
