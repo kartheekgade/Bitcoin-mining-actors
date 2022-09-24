@@ -1,5 +1,5 @@
 # Bitcion-mining-actors
-By using actor model in Erlang generating bitcoins
+By using actor model in Erlang for generating bitcoins
 
 ***Submitted by:***
 
