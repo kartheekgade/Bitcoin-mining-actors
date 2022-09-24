@@ -34,7 +34,7 @@ The work unit is 3 in size. A single worker does,
 
 ***The result of running your program for input 4***
 
-The below are the coins mined that contain 4 leading zeros.
+The mined coins with four leading zeros are listed below.
 
 <img
   src="/src/Images/Screenshot from 2022-09-24 11-34-25.png"
