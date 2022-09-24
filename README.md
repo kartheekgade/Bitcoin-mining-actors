@@ -61,7 +61,7 @@ CPU/Real-time ratio (i.e., CPU time/Real time) = 82.998/36.365=2.2 (\>1, therefo
 
 ***The coin with the most 0s you managed to find***
 
-The coins with the most 0s we found were 7.
+The coins with the most 0s we found were 37.
 
 ***The largest number of working machines you were able to run your code with***
 
@@ -69,6 +69,6 @@ Because we only had two machines, we made it function on them. However, we can m
 
 ***Conclusion:***
 
-The CPU\_time/Real\_time ratio in the client-server architecture is 2, which is greater than the one obtained while running on a single machine for the same amount of computation. As a result, the introduced multi-system design has improved performance.
+We currently have a CPU to REAL TIME ratio of 2.2 (obtained by utilizing 2 machines),  but we may enhance concurrency and improve this ratio even further by adding additional machines.
 
    
