@@ -66,15 +66,28 @@ The work unit is 3 in size. A single worker (i) Produces a random worker, (ii) P
 
 The below are the coins mined that contain 4 leading zeros.
 
-![](RackMultipart20220923-1-u90jkg_html_843cabb94745dde3.jpg)
+<img
+  src="/src/Images/Screenshot from 2022-09-24 11-34-25.png"
+  alt="Master Server"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+  
+<img
+   src="/src/Images/Screenshot from 2022-09-24 11-34-57.png"
+  alt="Master Server"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-![](RackMultipart20220923-1-u90jkg_html_cddb90a3660d8d3b.jpg)
 
 ***The ratio of CPU time to REAL TIME***
 
-![](RackMultipart20220923-1-u90jkg_html_baf177493c57d9e.png)
+<img
+  src="/src/Images/Screenshot from 2022-09-24 11-35-55.png"
+  alt="Master Server"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-CPU/Real-time ratio (i.e., CPU time/Real time) = 0.438/0.219=2.0 (\>1, therefore Parallelism exists).
+CPU/Real-time ratio (i.e., CPU time/Real time) = 82.998/36.365=2.2 (\>1, therefore Parallelism exists).
 
 ***The coin with the most 0s you managed to find***
 
