@@ -13,22 +13,14 @@ Bitcoins (see http://en.wikipedia.org/wiki/Bitcoin) are the most popular crypto-
 
 ***Implementation :***
 
-Initially the master and worker nodes are registered in the same network pool using shared secure cookie. 
-
-After this the worker nodes who already know the master node and master process name, ping the master node to establish
- a connection for message passing.
-
-Once the connection is established, first the master process is started followed by the worker processes.
-
-  
- Then the master sends the coins to the next available workers that are to be mined and also mines some coins by itself.
+The master and worker nodes are first configured in the same network pool using a shared secure cookie. The worker nodes then ping the master node to establish a connection for message passing since they already know the master node's name and that of the master process. The master process is initiated after the connection has been made, and then the worker processes.
   
   ***Assumptions***
 
-- All the nodes should be under the same network pool and should be aware of the unique cookie that is used for secure connection.
-- The hash generated should have "K" leading zeros for a successful match.
-- As the number of actors grow, so does the number of possible combinations, 
-resulting in the increased hash generation and a higher chance of finding the Bitcoins.
+* All the nodes should be under the same network pool and should be aware of the unique cookie that is used for secure connection.
+* The hash generated should have "K" leading zeros for a successful match.
+* As the number of actors grow, so does the number of possible combinations, resulting in the increased hash generation and a higher chance of finding the Bitcoins.
+* The Masters runs for a given custom time limit of 60,000 ms
 
 ***Size of the work unit***
 
