@@ -21,28 +21,10 @@ After this the worker nodes who already know the master node and master process 
 Once the connection is established, first the master process is started followed by the worker processes.
 
 ***Master:***
-<img
-  src="/src/Images/Screenshot from 2022-09-24 11-34-25.png"
-  alt="Master Server"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
-  
   
 ***Worker One( On remote node in a different machine):***
 
-<img
-   src="/src/Images/Screenshot from 2022-09-24 11-34-57.png"
-  alt="Master Server"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
-
 ***Worker Two( On different node in same machine):***
-
-<img
-  src="/src/Images/Screenshot from 2022-09-24 11-35-55.png"
-  alt="Master Server"
-  title="Optional title"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
   
   Then the master sends the coins to the next available workers that are to be mined and also mines some coins by itself.
   
@@ -97,7 +79,7 @@ The coins with the most 0s we found were 7.
 
 Since we only have three machines, we made it work on them. However, we can tweek this code to make it work on numerous machines.
 
-*Conclusion:*
+***Conclusion:***
 
 The CPU\_time/Real\_time ratio in the client-server architecture is 2, which is greater than the one obtained while running on a single machine for the same amount of computation. As a result, the introduced multi-system design has improved performance.
 
