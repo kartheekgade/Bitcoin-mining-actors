@@ -63,9 +63,9 @@ CPU/Real-time ratio (i.e., CPU time/Real time) = 82.998/36.365=2.2 (\>1, therefo
 
 The coins with the most 0s we found were 7.
 
-***The largest number of working machines you were able to run your code with.***
+***The largest number of working machines you were able to run your code with***
 
-Since we only have three machines, we made it work on them. However, we can tweek this code to make it work on numerous machines.
+Because we only had two machines, we made it function on them. However, we can modify this code to make it functional on a variety of devices.
 
 ***Conclusion:***
 
